@@ -1,0 +1,115 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AddAdminData.master.cs" Inherits="AddAdminData" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv ="Page-Enter" content ="blendTrans(Duration=0)"/>
+<meta http-equiv="Page-Exit"content="blendTrans(Duration=0)"/>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Key Aggregate CryptoSystems</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+  <style type="text/css">
+            .style18
+      {
+          background-image: url('images/bggg.png');
+          background-repeat: repeat-y;
+          background-position: 50% top;
+          height: 140px;
+         
+      }
+        .style19
+      {
+          height: 409px;
+      }
+        .style21
+      {
+          height: 38px;
+      }
+        .style22
+      {
+          height: 36px;
+      }
+      .style23
+      {
+          height: 38px;
+      }
+        .auto-style2 {
+          height: 38px;
+          width: 284px;
+      }
+      .auto-style3 {
+          height: 409px;
+          width: 284px;
+      }
+        </style>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+ <div align="center">
+     <table border="0" cellspacing="0" cellpadding="0" 
+        style="width: 931px; height: 237px">
+    <tr>
+      <td align="center" valign="top" class="style18">
+          <table border="0" 
+              cellspacing="0" cellpadding="0" 
+              style="background-color:#FFFFFF; height: 376px; width: 1132px;">
+        <tr>
+          <td align="left" valign="top" >
+              <asp:ImageMap ID="ImageMap1" runat="server" Height="325px" 
+                  ImageUrl="~/Images/banner1.jpg" Width="1133px">
+                  <asp:RectangleHotSpot Bottom="95" Left="30" Right="210" Top="30" 
+                      NavigateUrl="~/Index.aspx" />
+              </asp:ImageMap>
+            </td>
+        </tr>
+		<tr >
+          <td valign="top" align="center" style="border-style: 0; border-width: 0px;">
+		              <table style="height: 52px; width: 1132px;" bgcolor="#99CCFF">
+                      <tr>
+                             <td align="center" bgcolor="#6600ff" class="auto-style2">
+                              <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="White" 
+                            NavigateUrl="~/ALLFiles.aspx" Font-Italic="False">Home</asp:HyperLink>
+                          </td>
+                          <td align="center" bgcolor="#6600ff" class="auto-style2">
+                              <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="White" 
+                            NavigateUrl="~/CloudUplodedFile.aspx">Verfied Files</asp:HyperLink>
+                          </td>
+                          <td align="center" bgcolor="#6600ff" class="auto-style2">
+                              <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="White" 
+                            NavigateUrl="~/AddAdvertisment.aspx">Advertisements</asp:HyperLink>
+                          </td>
+                           <td align="center" bgcolor="#6600ff" class="auto-style2">
+                              <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="White" 
+                            NavigateUrl="~/LoginPage.aspx">Logout</asp:HyperLink>
+                          </td>
+                      </tr>
+                          </table>
+              <tr>
+                  <td align="center" valign="middle" class="auto-style2" bgcolor="#9933ff">
+                      <asp:Label ID="Label1" runat="server" Font-Size="X-Large" ForeColor="Black"
+                          Text="Cloud Admin Home "></asp:Label>
+                  </td>
+              </tr>
+              <tr>
+                  <td align="left" valign="top" class="auto-style3">
+                      <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                      </asp:ContentPlaceHolder>
+                  </td>
+              </tr>
+              </td>
+        </tr>
+          </table>
+          </td>
+    </tr>
+    <tr>
+      <td height="65" align="center" valign="middle" class="footer">All Rights Reserved.    </tr>
+  </table>
+</div>
+    </form>
+</body>
+</html>

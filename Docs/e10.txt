@@ -1,0 +1,6 @@
+Measuring recall is difficult because it is often difficult to know how many relevant records
+exist in a database. Often recall is estimated by identifying a pool of relevant records and
+then determining what proportion of the pool the search retrieved. There are several ways of
+creating a pool of relevant records: one method is to use all the relevant records found from
+different searches, another is to manually scan several journals to identify a set of relevant
+papers. strongest earthquake tremor strong tremors were felt in Delhi

@@ -1,0 +1,19 @@
+CREATE TABLE CloudData( [ID] [bigint] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+                        [FileName] Varchar(200),[UserID] Varchar(MAX),[UpFile] Varchar(MAX),[PubKey] Varchar(MAX),[MastKey] Varchar(MAX),[FileData] Varchar(MAX),[Category] Varchar(MAX),[FStatus] Varchar(MAX))
+
+
+CREATE TABLE FileUpload( [ID] [bigint] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+                        [FileName] Varchar(200), [Category] Varchar(200),[UserID] Varchar(MAX),[UpFile1] Varchar(MAX),[PubKey] Varchar(MAX),[MastKey] Varchar(MAX),[FStatus] Varchar(MAX),[FileData] Varchar(MAX),[FSize] Varchar(50))
+
+
+CREATE TABLE OwnerResponse( [ID] [bigint] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+                        [UserID] Varchar(150),[SendID] Varchar(150),[Category] Varchar(150),[KVCKey] Varchar(150),[OStat] Varchar(50),[UpFile] Varchar(MAX))
+
+CREATE TABLE RequestedFile( [ID] [bigint] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+                        [UserID] Varchar(150),[SendID] Varchar(150),[Category] Varchar(150),[FStat] Varchar(50),[UpFile] Varchar(MAX),[KVCKey] Varchar(MAX))
+
+CREATE TABLE LoginData( [ID] [bigint] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+                        [Firstname] Varchar(50),[LastName] Varchar(50),[MobNo] Varchar(50),[EmailID] Varchar(150),[Pass] Varchar(50))
+
+CREATE TABLE BasicInfo( [ID] [bigint] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+                        [Name1] Varchar(50),[EmailID] Varchar(50),[MobNo] Varchar(50),[MobNo1] Varchar(150),[District] Varchar(50),[City] Varchar(50),[PerAddress] Varchar(200),[CurAddress] Varchar(150),[Gender] Varchar(50),[MaritalStatus] Varchar(50),[Cast] Varchar(50),[DOB] Varchar(50),[BasicID] Varchar(50))

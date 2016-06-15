@@ -1,0 +1,111 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserAccount.master.cs" Inherits="UserAccount" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat ="server">
+<meta http-equiv ="Page-Enter" content ="blendTrans(Duration=0)"/>
+<meta http-equiv="Page-Exit"content="blendTrans(Duration=0)"/>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title> Key Based Cryptosystem</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<asp:ContentPlaceHolder ID="head1" runat="server" >
+</asp:ContentPlaceHolder>
+
+
+        <style type="text/css">
+            .style9
+            {
+            }
+            .style12
+            {
+                width: 181px;
+            }
+            .auto-style1 {
+                width: 181px;
+                height: 722px;
+            }
+            .auto-style2 {
+                height: 722px;
+            }
+        </style>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="0" style="width: 1015px">
+    <tr>
+      <td align="center" valign="top" class="bgPg">
+          <table border="0" 
+              cellspacing="0" cellpadding="0" 
+              style="background-color:#FFFFFF; margin-right: 0px; width: 928px;">
+        <tr>
+          <td align="left" valign="top" >
+              <asp:ImageMap ID="ImageMap1" runat="server" Height="325px" 
+                  ImageUrl="~/Images/banner1.jpg" Width="1205px">
+                  <asp:RectangleHotSpot Bottom="95" Left="30" Right="210" Top="30" 
+                      NavigateUrl="~/Index.aspx" />
+              </asp:ImageMap>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top">
+                <table border="0" cellspacing="0" cellpadding="0"
+                    style="width: 1204px; height: 52px">
+                    <tr>
+                        <td valign="top">
+
+
+                            <table style="width: 100%; height: 308px;" bgcolor="#99CCFF">
+                                <tr bgcolor="#FFFF66" align="center">
+                                    <td class="style9" valign="top" bgcolor="#000066" colspan="2">
+                                        <asp:Label ID="lblUserName" runat="server" Font-Bold="True"
+                                            Font-Names="Roboto" Font-Size="XX-Large" ForeColor="White"></asp:Label>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="middle" class="auto-style1"
+                                        style="border-right-style: solid; border-right-width: thin; border-right-color: #FFFFFF; background-color: #0099CC;" colspan="1">
+                                        <asp:Button ID="Button1" runat="server" Text="My Account" PostBackUrl="~/UserAccount.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" />
+                                        <asp:Button ID="Button12" runat="server" Text="Basic Info" PostBackUrl="~/BasicInformation.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                        <asp:Button ID="Button3" runat="server" Text="Upload File" PostBackUrl="~/DataUpload.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                        <asp:Button ID="Button10" runat="server" Text="Request File" PostBackUrl="~/RequestFile.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                        <asp:Button ID="Button4" runat="server" Text="Verified Data" PostBackUrl="~/VerifiedData.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                        <asp:Button ID="Button11" runat="server" Text="User Request" PostBackUrl="~/UserRequest.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                        <asp:Button ID="Button5" runat="server" Text="Owner Response" PostBackUrl="~/OwnerResponse.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" />
+                                        <asp:Button ID="Button6" runat="server" Text="History" PostBackUrl="~/History.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                        <asp:Button ID="Button7" runat="server" Text="Block User" PostBackUrl="~/BlockUser.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                        <asp:Button ID="Button8" runat="server" Text="Delete" PostBackUrl="~/DeleteUserAccount.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                        <asp:Button ID="Button9" runat="server" Text="Logout" PostBackUrl="~/LoginPage.aspx" Width="224px" BackColor="#6C36EB" BorderColor="#6600CC" BorderStyle="Solid" BorderWidth="2px" Font-Names="Roboto" Font-Size="Large" ForeColor="White" Height="70px" TabIndex="1" UseSubmitBehavior="False" CssClass="padding:2px;" />
+                                     </td>
+                                    <td valign="top" class="auto-style2">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+          </table>
+          </td>
+    </tr>
+        <tr>
+          <td height="65" align="center" valign="middle" class="footer">All Rights Reserved.         </tr>
+  </table>
+ 
+</div>
+    </form>
+</body>
+</html>
+
+
+

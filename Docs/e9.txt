@@ -1,0 +1,5 @@
+As noted earlier, records must be considered either relevant or irrelevant when calculating
+precision and recall. Obviously records can exist which are marginally relevant or somewhat
+irrelevant. Others may be very relevant and others completely irrelevant. This problem is
+complicated by individual perception: what is relevant to one person may not be relevant to
+another. strongest earthquake tremor

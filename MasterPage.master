@@ -1,0 +1,178 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv ="Page-Enter" content ="blendTrans(Duration=0)"/>
+<meta http-equiv="Page-Exit"content="blendTrans(Duration=0)"/>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title> Key Based Cryptosystem for Secured Storage on Cloud </title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<asp:ContentPlaceHolder ID="head1" runat="server" >
+</asp:ContentPlaceHolder>
+
+
+        <style type="text/css">
+            .style7
+            {
+                height: 19px;
+            }
+            .style9
+            {
+                height: 120px;
+            }
+            .style10
+            {
+                height: 51px;
+            }
+        .style38
+        {
+            width: 171px;
+        }
+            .style39
+            {
+                width: 168px;
+            }
+            .style40
+            {
+                width: 195px;
+            }
+            .style41
+            {
+                width: 182px;
+            }
+            .style42
+            {
+                height: 48px;
+            }
+            .auto-style1 {
+                background-image: url('images/bggg.png');
+                background-repeat: repeat-y;
+                background-position: 50% top;
+                width: 1152px;
+            }
+            .auto-style2 {
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                line-height: normal;
+                font-weight: normal;
+                color: #ffffff;
+                text-decoration: none;
+                background-color: #336699;
+                border-top: 4px solid #000000;
+                width: 1152px;
+            }
+            .auto-style3 {
+                width: 168px;
+                height: 41px;
+            }
+            .auto-style4 {
+                width: 171px;
+                height: 41px;
+            }
+            .auto-style5 {
+                width: 182px;
+                height: 41px;
+            }
+            .auto-style6 {
+                width: 195px;
+                height: 41px;
+            }
+            .auto-style7 {
+                height: 41px;
+            }
+        </style>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="0" style="width: 940px; height: 484px;" bgcolor="#FFFFCC">
+    <tr>
+      <td align="center" valign="top" class="auto-style1">
+          <table border="0" 
+              cellspacing="0" cellpadding="0" 
+              style="background-color:#FFFFFF; margin-right: 0px; width: 928px;">
+        <tr>
+          <td align="left" valign="top" class="style9">
+                 
+              <asp:ImageMap ID="ImageMap1" runat="server" Height="225px" 
+                  ImageUrl="~/Images/banner.png" Width="940px" onclick="ImageMap1_Click">
+                  <asp:RectangleHotSpot Bottom="95" Left="30" Right="210" Top="30" 
+                      NavigateUrl="~/Index.aspx" />
+              </asp:ImageMap>
+            </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="#000099">
+		  <table border="0" cellspacing="0" cellpadding="0" 
+                  style="width: 936px; height: 19px" bgcolor="Blue">
+            <tr>
+              <td  align="left" valign="middle" class="style42"   >
+       
+                  <table style="width:100%; height: 43px;">
+                      <tr bgcolor="#336699">
+                          <td align="center" class="auto-style3" bgcolor="#3399FF">
+                              <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="White" 
+                            NavigateUrl="~/Index.aspx">HOME</asp:HyperLink>
+                          </td>
+                          <td align="center" class="auto-style4" bgcolor="#3399FF">
+                              <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="White" 
+                            NavigateUrl="~/LoginPage.aspx?UserId=Owner Login">USER LOGIN</asp:HyperLink>
+                          </td>
+                          <td align="center" class="auto-style5" bgcolor="#3399FF">
+                              <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="White" 
+                            NavigateUrl="~/LoginPage.aspx?UserId=Admin Login">ADMIN LOGIN</asp:HyperLink>
+                          </td>
+                          <td align="center" class="auto-style6" bgcolor="#3399FF">
+                              <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="White" 
+                            NavigateUrl="~/Registration.aspx">SIGNUP</asp:HyperLink>
+                          </td>
+                          <td align="center" bgcolor="#3399FF" class="auto-style7">
+                              <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="White" 
+                            NavigateUrl="~/ContactUs.aspx">CONTACT US</asp:HyperLink>
+                          </td>
+                      </tr>
+                  </table>
+       
+                  </td>
+                </tr>
+            <tr>
+              <td  align="center" valign="middle" class="style10" bgcolor="#9900FF"   >
+       
+                  <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="White" 
+                      Text="Key Based Cryptosystem"></asp:Label>
+       
+                  </td>
+                </tr>
+            <tr>
+              <td  align="left" valign="top" class="style7"   >
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder></td>
+                </tr>
+              </table>
+              </td>
+          </tr>
+          </table>
+          </td>
+    </tr>
+        <tr>
+          <td height="65" align="center" valign="middle" class="auto-style1" bgcolor="#6699FF">All Rights Reserved. </td>
+        </tr>
+  </table></td>
+    </tr>
+    <tr>
+      <td height="12" align="left" valign="top">
+        </td>
+    </tr>
+  </table>
+</div>
+    </form>
+</body>
+</html>
+
+
